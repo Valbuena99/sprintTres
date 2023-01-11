@@ -1,0 +1,23 @@
+[  
+  {    
+    "id": 1,    
+    "ubicacion": "123 Main St",    
+    "precio": 100000,    
+    "habitaciones": 3,    
+    "banos": 2,   
+    "tipo": "Casa",    
+    "descripcion": "Este es un hermoso inmueble con una ubicación privilegiada.",    
+    "fotos": ["foto1.jpg", "foto2.jpg"]
+  },
+  {
+    "id": 2,
+    "ubicacion": "456 Maple Ave",
+    "precio": 200000,
+    "habitaciones": 4,
+    "banos": 2.5,
+    "terreno": 2000,
+    "tipo": "Apartamento",
+    "descripcion": "Este es un inmueble de lujo con una vista impresionante.",
+    "fotos": ["foto3.jpg", "foto4.jpg"]
+  }
+]

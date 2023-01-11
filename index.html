@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+
+    <title>casaRoyal</title>
+  </head>
+
+  <body>
+    <header class="">
+      <nav class="">
+        <a class="logo" href=" "
+          ><img src="images/logo-black.png" alt="logo"
+        /></a>
+
+        <div class="nav__menu">
+          <div class="nav__left">
+            <a href="/index.html"
+              >HOMEPAGE<i class="fa-solid fa-angle-down"></i
+            ></a>
+            <a href="">PROPERTIES<i class="fa-solid fa-angle-down"></i></a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+          </div>
+
+          <div class="nav__right">
+            <a href=""
+              >COMPARE<img
+                class="checkmark"
+                src="images/compare-check.png"
+                alt="checkmark"
+            /></a>
+            <a href=" "><i class="fa-regular fa-heart"></i></a>
+            <button type="button">SUBMIT LISTING</button>
+          </div>
+        </div>
+
+        <!-- <a class="hamburger " href=" "><i class="fa-solid fa-bars"></i></a> -->
+
+        <a class="hamburger" href=" ">
+          <span class="item-1"></span>
+          <span class="item-2"></span>
+          <span class="item-3"></span>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- hero -->
+      <section class="hero">
+        <div class="hero__container container">
+          <div class="hero__container__inner">
+            <h1>Let Us Guide You Home</h1>
+            <p>Find the house of your dreams</p>
+
+            <form
+              class="hero__container__inner__form"
+              method="GET"
+              action="/api/inmuebles"
+            >
+              <div>
+                <span>Type</span><br />
+                <select name="tipo">
+                  <option value="casa">Casa</option>
+                  <option value="apartamento">Apartamento</option>
+                  <option value="duplex">Dúplex</option>
+                  <option value="piso">Piso</option>
+                </select>
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div>
+                <span>Status</span><br />Select Status<i
+                  class="fa-solid fa-angle-down"
+                ></i>
+              </div>
+              <input
+                type="text"
+                name="ubicacion"
+                placeholder="Search for properties, suburbs or keywords…"
+              />
+              <button>FIND PROPERTIES</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- hero -->
+
+      <!-- featured -->
+      <section class="featured">
+        <p>CASAROYAL REAL ESTATE AGENCY</p>
+        <h2><strong>Featured</strong> Properties</h2>
+
+        <div class="featured__cards container">
+          <article>
+            <div class="property property__1">
+              <div class="property__top">
+                <p>HOUSE</p>
+                <p>FOR SALE</p>
+                <p><i class="fa-solid fa-bolt-lightning"></i></p>
+              </div>
+
+              <div class="property__bot">
+                <p>$320,000.00</p>
+                <a href=" "><i class="fa-regular fa-heart heart"></i></a>
+                <a href=" "
+                  ><i class="fa-solid fa-arrow-right-arrow-left exchange"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="description">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Beverly Hills, CA</p>
+
+              <p>272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
+
+              <div class="owner__post">
+                <img src="images/owner.png" alt="" />
+                <p>Hellen Mattis</p>
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>4 months ago</p>
+              </div>
+
+              <div class="details">
+                <div class="details__area">
+                  <img src="images/sm-area.png" alt="area" /><span
+                    ><strong>2400</strong> Sq Ft</span
+                  >
+                </div>
+
+                <div class="details__amenities">
+                  <img src="images/sm-garage.png" alt="garage" /><span
+                    ><strong>2</strong></span
+                  >
+                  <img src="images/sm-bathroom.png" alt="bed" /><span
+                    ><strong>3</strong></span
+                  >
+                  <img src="images/sm-bedroom.png" alt="bath" /><span
+                    ><strong>3</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="property property__2">
+              <div class="property__top">
+                <p>HOUSE</p>
+                <p>FOR SALE</p>
+                <p><i class="fa-solid fa-bolt-lightning"></i></p>
+              </div>
+
+              <div class="property__bot">
+                <p>$320,000.00</p>
+                <a href=" "><i class="fa-regular fa-heart heart"></i></a>
+                <a href=" "
+                  ><i class="fa-solid fa-arrow-right-arrow-left exchange"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="description">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Beverly Hills, CA</p>
+
+              <p>272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
+
+              <div class="owner__post">
+                <img src="images/owner.png" alt="" />
+                <p>Hellen Mattis</p>
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>4 months ago</p>
+              </div>
+
+              <div class="details">
+                <div class="details__area">
+                  <img src="images/sm-area.png" alt="area" /><span
+                    ><strong>2400</strong> Sq Ft</span
+                  >
+                </div>
+
+                <div class="details__amenities">
+                  <img src="images/sm-garage.png" alt="garage" /><span
+                    ><strong>2</strong></span
+                  >
+                  <img src="images/sm-bathroom.png" alt="bed" /><span
+                    ><strong>3</strong></span
+                  >
+                  <img src="images/sm-bedroom.png" alt="bath" /><span
+                    ><strong>3</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="property property__3">
+              <div class="property__top">
+                <p>HOUSE</p>
+                <p>FOR SALE</p>
+                <p><i class="fa-solid fa-bolt-lightning"></i></p>
+              </div>
+
+              <div class="property__bot">
+                <p>$320,000.00</p>
+                <a href=" "><i class="fa-regular fa-heart heart"></i></a>
+                <a href=" "
+                  ><i class="fa-solid fa-arrow-right-arrow-left exchange"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="description">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Beverly Hills, CA</p>
+
+              <p>272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
+
+              <div class="owner__post">
+                <img src="images/owner.png" alt="" />
+                <p>Hellen Mattis</p>
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>4 months ago</p>
+              </div>
+
+              <div class="details">
+                <div class="details__area">
+                  <img src="images/sm-area.png" alt="area" /><span
+                    ><strong>2400</strong> Sq Ft</span
+                  >
+                </div>
+
+                <div class="details__amenities">
+                  <img src="images/sm-garage.png" alt="garage" /><span
+                    ><strong>2</strong></span
+                  >
+                  <img src="images/sm-bathroom.png" alt="bed" /><span
+                    ><strong>3</strong></span
+                  >
+                  <img src="images/sm-bedroom.png" alt="bath" /><span
+                    ><strong>3</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="property property__4">
+              <div class="property__top">
+                <p>HOUSE</p>
+                <p>FOR SALE</p>
+                <p><i class="fa-solid fa-bolt-lightning"></i></p>
+              </div>
+
+              <div class="property__bot">
+                <p>$320,000.00</p>
+                <a href=" "><i class="fa-regular fa-heart heart"></i></a>
+                <a href=" "
+                  ><i class="fa-solid fa-arrow-right-arrow-left exchange"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="description">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Beverly Hills, CA</p>
+
+              <p>272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
+
+              <div class="owner__post">
+                <img src="images/owner.png" alt="" />
+                <p>Hellen Mattis</p>
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>4 months ago</p>
+              </div>
+
+              <div class="details">
+                <div class="details__area">
+                  <img src="images/sm-area.png" alt="area" /><span
+                    ><strong>2400</strong> Sq Ft</span
+                  >
+                </div>
+
+                <div class="details__amenities">
+                  <img src="images/sm-garage.png" alt="garage" /><span
+                    ><strong>2</strong></span
+                  >
+                  <img src="images/sm-bathroom.png" alt="bed" /><span
+                    ><strong>3</strong></span
+                  >
+                  <img src="images/sm-bedroom.png" alt="bath" /><span
+                    ><strong>3</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="property property__5">
+              <div class="property__top">
+                <p>HOUSE</p>
+                <p>FOR SALE</p>
+                <p><i class="fa-solid fa-bolt-lightning"></i></p>
+              </div>
+
+              <div class="property__bot">
+                <p>$320,000.00</p>
+                <a href=" "><i class="fa-regular fa-heart heart"></i></a>
+                <a href=" "
+                  ><i class="fa-solid fa-arrow-right-arrow-left exchange"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="description">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Beverly Hills, CA</p>
+
+              <p>272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
+
+              <div class="owner__post">
+                <img src="images/owner.png" alt="" />
+                <p>Hellen Mattis</p>
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>4 months ago</p>
+              </div>
+
+              <div class="details">
+                <div class="details__area">
+                  <img src="images/sm-area.png" alt="area" /><span
+                    ><strong>2400</strong> Sq Ft</span
+                  >
+                </div>
+
+                <div class="details__amenities">
+                  <img src="images/sm-garage.png" alt="garage" /><span
+                    ><strong>2</strong></span
+                  >
+                  <img src="images/sm-bathroom.png" alt="bed" /><span
+                    ><strong>3</strong></span
+                  >
+                  <img src="images/sm-bedroom.png" alt="bath" /><span
+                    ><strong>3</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <div class="property property__6">
+              <div class="property__top">
+                <p>HOUSE</p>
+                <p>FOR SALE</p>
+                <p><i class="fa-solid fa-bolt-lightning"></i></p>
+              </div>
+
+              <div class="property__bot">
+                <p>$320,000.00</p>
+                <a href=" "><i class="fa-regular fa-heart heart"></i></a>
+                <a href=" "
+                  ><i class="fa-solid fa-arrow-right-arrow-left exchange"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="description">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Beverly Hills, CA</p>
+
+              <p>272 S Rexford Dr, Beverly Hills, CA 90212, USA</p>
+
+              <div class="owner__post">
+                <img src="images/owner.png" alt="" />
+                <p>Hellen Mattis</p>
+                <i class="fa-regular fa-calendar-days"></i>
+                <p>4 months ago</p>
+              </div>
+
+              <div class="details">
+                <div class="details__area">
+                  <img src="images/sm-area.png" alt="area" /><span
+                    ><strong>2400</strong> Sq Ft</span
+                  >
+                </div>
+
+                <div class="details__amenities">
+                  <img src="images/sm-garage.png" alt="garage" /><span
+                    ><strong>2</strong></span
+                  >
+                  <img src="images/sm-bathroom.png" alt="bed" /><span
+                    ><strong>3</strong></span
+                  >
+                  <img src="images/sm-bedroom.png" alt="bath" /><span
+                    ><strong>3</strong></span
+                  >
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+        <a class="properties btn-black" href=" ">ALL PROPERTIES</a>
+      </section>
+      <!-- featured -->
+
+      <!-- hot -->
+      <section class="hot">
+        <p>CASAROYAL REAL ESTATE AGENCY</p>
+        <h2><strong> Hot</strong> Deal</h2>
+
+        <div class="hot__container container">
+          <div class="hot__left">
+            <a href=" ">Photos (4)</a>
+          </div>
+
+          <div class="hot__right">
+            <p>Residential Tower For Rent</p>
+            <p>15 Apartments of Type B</p>
+            <p><i class="fa-regular fa-circle-dot"></i> Los Angeles, CA</p>
+            <p>From <strong>$1,700.00</strong> Per Month</p>
+
+            <span class="play">
+              <span class="triangle"></span>
+            </span>
+
+            <div class="hot__right__amenities">
+              <div class="sqft">
+                <img src="images/bg-area.png" alt="" />
+                <span><strong>1600</strong><br />Sq Ft</span>
+              </div>
+
+              <div class="bed">
+                <img src="images/bg-bedroom.png" alt="" />
+                <span><strong>2</strong><br />Beds</span>
+              </div>
+
+              <div class="bath">
+                <img src="images/bg-bathroom.png" alt="" />
+                <span><strong>1</strong><br />Bath</span>
+              </div>
+
+              <div class="garage">
+                <img src="images/bg-garage.png" alt="" />
+                <span><strong>1</strong><br />Garage</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hot -->
+
+      <!-- area -->
+      <section class="area">
+        <p>CASAROYAL REAL ESTATE AGENCY</p>
+        <h2><strong>Properties</strong> by Area</h2>
+
+        <div class="area__container container">
+          <div class="area__container__top">
+            <div class="area__places los__angeles">
+              <p>LOS ANGELES</p>
+              <p>
+                <i class="fa-regular fa-circle-dot fa-area"></i>24 Properties
+              </p>
+            </div>
+            <div class="area__places san__francisco">
+              <p>SAN FRANCISCO</p>
+              <p>
+                <i class="fa-regular fa-circle-dot fa-area"></i>19 Properties
+              </p>
+            </div>
+          </div>
+
+          <div class="area__container__bot">
+            <div class="area__places seattle">
+              <p>SEATTLE</p>
+              <p>
+                <i class="fa-regular fa-circle-dot fa-area"></i>13 Properties
+              </p>
+            </div>
+            <div class="area__places san__dieago">
+              <p>SAN DEIGO</p>
+              <p>
+                <i class="fa-regular fa-circle-dot fa-area"></i>1 Properties
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- area -->
+
+      <!-- area -->
+      <section class="agents">
+        <p>MEET OUR TEAM</p>
+        <h2><strong>Our</strong> Agents</h2>
+
+        <div class="agent__container container">
+          <article class="agents__cards">
+            <img src="images/agent-image_1.png" alt="" />
+            <p>Real Estate Broker</p>
+            <p>JOHN DOE</p>
+            <p>123 456 7890</p>
+            <p>agent@gmail.com</p>
+
+            <div class="agents__cards__social">
+              <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=" "><i class="fa-brands fa-twitter"></i></a>
+              <a href=" "><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </article>
+
+          <article class="agents__cards">
+            <img src="images/agent-image_2.png" alt="" />
+            <p>Real Estate Broker</p>
+            <p>JOHN DOE</p>
+            <p>123 456 7890</p>
+            <p>agent@gmail.com</p>
+
+            <div class="agents__cards__social">
+              <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=" "><i class="fa-brands fa-twitter"></i></a>
+              <a href=" "><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </article>
+
+          <article class="agents__cards">
+            <img src="images/agent-image_3.png" alt="" />
+            <p>Real Estate Broker</p>
+            <p>JOHN DOE</p>
+            <p>123 456 7890</p>
+            <p>agent@gmail.com</p>
+
+            <div class="agents__cards__social">
+              <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=" "><i class="fa-brands fa-twitter"></i></a>
+              <a href=" "><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="agents__cards__indicator">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+      <!-- area -->
+
+      <!-- sell -->
+      <section class="sell">
+        <div class="sell__container container">
+          <div class="sell__property">
+            <p>Want to Sell Property?</p>
+            <p>
+              Let us create a tailored strategic marketing plan and keep<br />track
+              of the selling process.
+            </p>
+            <a class="btn-black" href=" "
+              >MORE DETAILS<img src="images/arrow-right.png" alt=""
+            /></a>
+          </div>
+        </div>
+      </section>
+      <!-- sell -->
+
+      <!-- agencies -->
+      <section class="agencies">
+        <p>MEET OUR TEAM</p>
+        <h2><strong>Real Estate</strong> Agencies</h2>
+
+        <div class="agencies__container container">
+          <article class="agencies__cards">
+            <div class="agencies__cards__top">
+              <p>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png"
+                  alt=""
+                />Verified
+              </p>
+              <p>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png"
+                  alt=""
+                />4.5
+              </p>
+            </div>
+            <img src="images/agency-1.png" alt="" />
+            <p><img src="images/usa-flag.png" alt="" />San Francisco, USA</p>
+            <p>ProHouse</p>
+            <p>123 456 7890</p>
+            <p>agency@gmail.com</p>
+            <a href=" ">3 Properties</a>
+          </article>
+
+          <article class="agencies__cards">
+            <div class="agencies__cards__top">
+              <p>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png"
+                  alt=""
+                />Verified
+              </p>
+              <p>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png"
+                  alt=""
+                />4.5
+              </p>
+            </div>
+            <img src="images/agency-2.png" alt="" />
+            <p><img src="images/usa-flag.png" alt="" />Los Angeles, USA</p>
+            <p>beHome</p>
+            <p>123 456 7890</p>
+            <p>agency@gmail.com</p>
+            <a href=" ">3 Properties</a>
+          </article>
+
+          <article class="agencies__cards">
+            <div class="agencies__cards__top">
+              <p>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png"
+                  alt=""
+                />Verified
+              </p>
+              <p>
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png"
+                  alt=""
+                />4.5
+              </p>
+            </div>
+            <img src="images/agency-3.png" alt="" />
+            <p><img src="images/usa-flag.png" alt="" />Seattle, USA</p>
+            <p>Alain Doe</p>
+            <p>123 456 7890</p>
+            <p>agency@gmail.com</p>
+            <a href=" ">3 Properties</a>
+          </article>
+        </div>
+      </section>
+      <!-- agencies -->
+
+      <!-- articles -->
+      <section class="articles">
+        <p>CASAROYAL NEWS</p>
+        <h2><strong>Articles</strong> & Tips</h2>
+
+        <div class="articles__container container">
+          <article class="articles__cards">
+            <img src="images/article-1.png" alt="" />
+            <div class="article__content">
+              <p>Category</p>
+              <p>BUYING A HOME</p>
+              <p><i class="fa-regular fa-clock"></i>DECEMBER 28, 2018</p>
+            </div>
+          </article>
+
+          <article class="articles__cards">
+            <img src="images/article-2.png" alt="" />
+            <div class="article__content">
+              <p>Category</p>
+              <p>PROS AND CONS ON A COUNTRYSIDE HOUSE</p>
+              <p><i class="fa-regular fa-clock"></i>DECEMBER 28, 2018</p>
+            </div>
+          </article>
+
+          <article class="articles__cards">
+            <img src="images/article-3.png" alt="" />
+            <div class="article__content">
+              <p>Category</p>
+              <p>BUYING A HOME</p>
+              <p><i class="fa-regular fa-clock"></i>DECEMBER 28, 2018</p>
+            </div>
+          </article>
+        </div>
+
+        <a class="btn-black" href=" ">MORE ARTICLES & TIPS</a>
+      </section>
+      <!-- articles -->
+
+      <!-- values -->
+      <section class="values">
+        <p>CASAROYAL REAL ESTATE AGENCY</p>
+        <h2><strong>Our</strong> Values</h2>
+
+        <div class="values__container container">
+          <article class="values__cards">
+            <i class="fa-regular fa-comment"></i>
+            <p>Ensuring clear communication</p>
+            <p>
+              We keep you in the loop every step of the way. You can rely on a
+              transparent, comprehensible flow of information.
+            </p>
+          </article>
+
+          <article class="values__cards">
+            <i class="fa-regular fa-paper-plane"></i>
+            <p>Making the most of technology</p>
+            <p>
+              Time is precious. We guarantee a high degree of efficiency and a
+              premium level of service by using the right tools.
+            </p>
+          </article>
+
+          <article class="values__cards">
+            <i class="fa-regular fa-heart"></i>
+            <p>Providing excellent customer service</p>
+            <p>
+              We are passionate about what we do and we take pride achieving the
+              personalised results that you have in mind.
+            </p>
+          </article>
+        </div>
+
+        <a class="btn-black" href=" ">READ MORE</a>
+      </section>
+      <!-- values -->
+
+      <!-- testimonials -->
+      <section class="testimonials">
+        <div class="testimonials__container container">
+          <div class="testimonials__container__inner">
+            <p>CLIENTS REVIEWS</p>
+            <h2><strong>What</strong> Our Clients Say</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              eleifend nunc sem, sit amet luctus tellus tempus tempor. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+
+            <div class="testimonials__container__inner__clients">
+              <img src="images/agent-image_2.png" alt="" />
+              <p>ALAN POE<br /><span>SAN FRANCISCO</span></p>
+              <button><i class="fa-solid fa-angle-left"></i></button>
+              <button><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- testimonials -->
+    </main>
+
+    <footer>
+      <div class="footer__container">
+        <div class="footer__container__top">
+          <div class="container">
+            <a href=" "><img src="images/logo-white.png" alt="logo-white" /></a>
+            <div class="footer__container__top__brands">
+              <a href=" "><i class="fa-brands fa-facebook-f"></i></a>
+              <a href=" "><i class="fa-brands fa-twitter"></i></a>
+              <a href=" "><i class="fa-brands fa-instagram"></i></a>
+              <a href=" "><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__container__middle">
+          <div class="container">
+            <div class="information">
+              <p><strong>INFORMATION</strong></p>
+
+              <ul>
+                <li><a href=" ">Our Contacts</a></li>
+                <li><a href=" ">Privacy Policy</a></li>
+                <li><a href=" ">terms and Conditions</a></li>
+                <li><a href=" ">FAQs</a></li>
+              </ul>
+            </div>
+            <div class="location">
+              <p><strong>LOCATIONS</strong></p>
+
+              <ul>
+                <li><a href=" ">Beverly Hills</a></li>
+                <li><a href=" ">Los Angeles</a></li>
+                <li><a href=" ">Mission Viejo</a></li>
+                <li><a href=" ">Newport Beach</a></li>
+                <li><a href=" ">Pasadena</a></li>
+              </ul>
+            </div>
+            <div class="about">
+              <p><strong>ABOUT CASAROYAL</strong></p>
+
+              <ul>
+                <li>
+                  casaRoyal - Premium Real Estate WordPress<br /><br />Theme by
+                  FantasyThemes
+                </li>
+                <li>
+                  <i class="fa-solid fa-location-arrow"></i>111 Wall Stree, USA,
+                  New York
+                </li>
+                <li><i class="fa-solid fa-phone"></i>+1 (234) 567 8900</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__container__bot">
+          <div class="container">
+            <p>
+              Proudly powered by<strong> WordPress</strong> and
+              <strong>casaRoyal</strong> by
+              <strong>FantasyTheme</strong>
+            </p>
+            <div>
+              <a href=" ">Privacy Policy</a>
+              <a href=" ">Terms and Conditions</a>
+              <a href=" ">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
